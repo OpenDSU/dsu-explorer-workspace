@@ -21,3 +21,4 @@ cardinal
 opendsu-sdk
 **/**/seed
 **/**/.DS_Store
+/opendsu-sdk/
