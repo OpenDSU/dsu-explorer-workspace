@@ -22,3 +22,5 @@ opendsu-sdk
 **/**/seed
 **/**/.DS_Store
 /opendsu-sdk/
+.idea/
+/apihub-root/assets/
