@@ -141,7 +141,7 @@
                     "cmd": "cd dossier-explorer-wallet-prototype && npm run build"
                 },
                 {
-                    "type": "copy",
+                    "type": "copySeed",
                     "src": "./dossier-explorer-wallet-prototype/seed",
                     "target": "./apihub-root/dsu-explorer/wallet-patch/seed",
                     "options": {
