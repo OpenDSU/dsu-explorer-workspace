@@ -13,7 +13,7 @@
     "secrets",
     "iframe",
     "stream",
-    "versionless",
+    "versionlessDSU",
     "staticServer"
   ],
   "componentsConfig": { },
