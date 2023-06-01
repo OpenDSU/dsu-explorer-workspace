@@ -1,7 +1,4 @@
-themes
-dossier-explorer-wallet-prototype
-apihub-root/dsu-explorer/loader
-apihub-root/explorer-wallet/loader
+apihub-root/dsu-explorer
 apihub-root/*
 !apihub-root/external-volume
 apihub-root/external-volume/*
@@ -9,18 +6,12 @@ apihub-root/external-volume/*
 !apihub-root/index.html
 !apihub-root/assets
 !apihub/read.me
-
-dossier-explorer-ssapp
 node_modules
 package-lock.json
 env.json.devel
 latest-change-set.txt
-webcardinal/bundle
-webcardinal/node_modules
-cardinal
 opendsu-sdk
 **/**/seed
 **/**/.DS_Store
 /opendsu-sdk/
 .idea/
-/apihub-root/assets/
