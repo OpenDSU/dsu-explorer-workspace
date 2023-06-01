@@ -2,42 +2,8 @@
     "workDir": ".",
     "dependencies": [
         {
-            "name": "opendsu-sdk",
-            "src": "http://github.com/opendsu/opendsu-sdk.git",
-            "actions": [
-                {
-                    "type": "smartClone",
-                    "target": ".",
-                    "collectLog": false
-                },
-                {
-                    "type": "execute",
-                    "cmd": "cd opendsu-sdk && npm install"
-                }
-            ]
-        },
-        {
-            "name": "cardinal",
-            "src": "https://github.com/OpenDSU/cardinal.git",
-            "actions": [
-                {
-                    "type": "smartClone",
-                    "target": ".",
-                    "collectLog": false
-                },
-                {
-                    "type": "execute",
-                    "cmd": "cd cardinal && npm install"
-                },
-                {
-                    "type": "execute",
-                    "cmd": "cd cardinal && npm run build"
-                }
-            ]
-        },
-        {
             "name": "webcardinal/bundle",
-            "src": "https://github.com/webcardinal/webcardinal-all-release",
+            "src": "https://github.com/webcardinal/webcardinal-minimal-release",
             "actions": [
                 {
                     "type": "smartClone",
@@ -51,8 +17,8 @@
             ]
         },
         {
-            "name": "themes/blue-fluorite-theme",
-            "src": "https://github.com/opendsu/blue-fluorite-theme.git",
+            "name": "opendsu-sdk",
+            "src": "http://github.com/opendsu/opendsu-sdk.git",
             "actions": [
                 {
                     "type": "smartClone",
@@ -61,7 +27,7 @@
                 },
                 {
                     "type": "execute",
-                    "cmd": "cd themes/blue-fluorite-theme && npm install"
+                    "cmd": "cd opendsu-sdk && npm install"
                 }
             ]
         },
@@ -83,7 +49,7 @@
 
         {
             "name": "dossier-explorer-wallet-prototype",
-            "src": "https://github.com/OpenDSU/dossier-explorer-wallet-prototype.git",
+            "src": "https://github.com/OpenDSU/dossier-explorer-wallet-prototype",
             "actions": [
                 {
                     "type": "smartClone",
@@ -99,31 +65,11 @@
     ],
     "build": [
         {
-            "name": "cardinal-wallet-build",
-            "src": "",
-            "actions": [
-                {
-                    "type": "execute",
-                    "cmd": "cd cardinal && npm run build-dossier"
-                }
-            ]
-        },
-        {
             "name": "webcardinal-wallet-build",
             "actions": [
                 {
                     "type": "execute",
                     "cmd": "cd webcardinal && npm run build"
-                }
-            ]
-        },
-        {
-            "name": "blue-fluorite-theme-wallet-build",
-            "src": "",
-            "actions": [
-                {
-                    "type": "execute",
-                    "cmd": "cd themes/blue-fluorite-theme && npm run build-dossier"
                 }
             ]
         },
@@ -170,7 +116,7 @@
                     "cmd": "cd dossier-explorer-wallet-prototype && npm run build"
                 },
                 {
-                    "type": "copy",
+                    "type": "copySeed",
                     "src": "./dossier-explorer-wallet-prototype/seed",
                     "target": "./apihub-root/dsu-explorer/wallet-patch/seed",
                     "options": {
