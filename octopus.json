@@ -49,7 +49,7 @@
 
         {
             "name": "dossier-explorer-wallet-prototype",
-            "src": "https://github.com/luputeodor2/dossier-explorer-wallet-prototype",
+            "src": "https://github.com/OpenDSU/dossier-explorer-wallet-prototype",
             "actions": [
                 {
                     "type": "smartClone",
