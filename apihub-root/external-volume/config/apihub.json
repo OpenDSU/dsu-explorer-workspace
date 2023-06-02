@@ -1,6 +1,6 @@
 {
-  "storage": "../apihub-root",
-  "port": 8081,
+  "storage": "../apihub-root/dsu-explorer",
+  "port": 8080,
   "preventRateLimit": true,
   "activeComponents": [
     "bdns",
