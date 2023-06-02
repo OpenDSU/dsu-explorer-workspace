@@ -1,5 +1,5 @@
 {
-  "storage": "../apihub-root/dsu-explorer",
+  "storage": "../apihub-root",
   "port": 8080,
   "preventRateLimit": true,
   "activeComponents": [
@@ -16,7 +16,11 @@
     "versionlessDSU",
     "staticServer"
   ],
-  "componentsConfig": { },
+  "componentsConfig": {
+    "staticServer": {
+      "root": "../apihub-root/dsu-explorer"
+    }
+  },
   "responseHeaders": {
     "X-Frame-Options": "SAMEORIGIN",
     "X-XSS-Protection": "1; mode=block"
@@ -26,5 +30,4 @@
   "enableOAuth": false,
   "enableLocalhostAuthorization": false,
   "serverAuthentication": false
-
 }
